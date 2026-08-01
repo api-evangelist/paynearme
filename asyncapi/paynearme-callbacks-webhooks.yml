@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: derived
+source: >-
+  github.com/paynearme sample callback-listener repositories
+  (samplecode_ruby, samplecode_java, samplecode_php, samplecode_csharp)
+spec_type: Webhooks
+summary: >-
+  PayNearMe integrates with merchant systems using server-to-server HTTP
+  callbacks (webhooks). PayNearMe publishes official callback-listener sample
+  implementations in Ruby, Java, PHP and C# that demonstrate handling incoming
+  callbacks and constructing the expected response. Two callback types are
+  documented in the sample code: an authorize callback (invoked to authorize a
+  pending payment/order) and a confirm callback (invoked to confirm a
+  completed payment). Handlers are mounted at /callbacks/authorize and
+  /callbacks/confirm in the reference implementations. Authoritative event
+  schemas and signature verification are documented in PayNearMe's
+  integration documentation, which is provided to onboarded merchants.
+transport: http
+direction: inbound
+sample_listeners:
+  - language: ruby
+    repo: https://github.com/paynearme/samplecode_ruby
+  - language: java
+    repo: https://github.com/paynearme/samplecode_java
+  - language: php
+    repo: https://github.com/paynearme/samplecode_php
+  - language: csharp
+    repo: https://github.com/paynearme/samplecode_csharp
+webhooks:
+  - name: authorize
+    path: /callbacks/authorize
+    description: >-
+      Server-to-server callback PayNearMe sends to request authorization for a
+      pending payment or order. The listener returns an authorize response.
+  - name: confirm
+    path: /callbacks/confirm
+    description: >-
+      Server-to-server callback PayNearMe sends to confirm a completed payment.
+      The listener returns a confirm response.
+notes: >-
+  No published AsyncAPI or OpenAPI document was found on PayNearMe's public
+  surface (developer docs are gated behind merchant onboarding). This catalog
+  is derived from the provider's official public sample-listener repositories
+  and is not an authoritative event schema.

@@ -1,9 +1,32 @@
 aid: paynearme
 name: PayNearMe
-description: 'PayNearMe is a company surfaced as a portfolio company of costanoa-ventures, true-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  PayNearMe is a modern payments platform that helps businesses accept, disburse,
+  and manage payments across cash, card, ACH, digital wallets and pay-by-bank
+  while lowering the total cost of acceptance by increasing acceptance rates,
+  driving self-service, and simplifying payment exceptions. It is best known for
+  its cash-at-retail network of 62,000+ locations (7-Eleven, CVS, Walmart,
+  Walgreens, Kroger, Casey's, Family Dollar, Dollar General and more) alongside
+  a full electronic billing and payments stack. PayNearMe serves auto and
+  consumer lending, credit unions, iGaming and sports betting, buy-here-pay-here
+  dealers, tolling, mortgage servicing, and law firms, and integrates with
+  merchant loan-management and dealer platforms through server-to-server
+  callbacks (webhooks) and a partner API. This profile was added to the API
+  Evangelist network from a VC portfolio lead and enriched from PayNearMe's
+  public developer, security, and integration surface.
 url: https://raw.githubusercontent.com/api-evangelist/paynearme/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://s31799.pcdn.co/wp-content/themes/paynearme-sage-theme-07.08.26/public/images/global/logo.46cdfe.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,10 +36,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Payments
+- Billing
+- ACH
+- Cash Payments
+- Digital Wallets
+- Lending
+- iGaming
+- Webhooks
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +56,35 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.paynearme.com
+  url: https://home.paynearme.com/
+- type: Documentation
+  url: https://paynearme.zendesk.com/hc/en-us
+- type: Support
+  url: https://paynearme.zendesk.com/
+- type: Blog
+  url: https://home.paynearme.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/paynearme
+- type: Login
+  url: https://paynearme.com/single_sign_on
+- type: SignUp
+  url: https://home.paynearme.com/contact-us/
+- type: TermsOfService
+  url: https://paynearme.com/doc/bn_user/tos
+- type: PrivacyPolicy
+  url: https://paynearme.com/doc/bn_user/privacy
+- type: Integrations
+  url: https://home.paynearme.com/partners/
+- type: Compliance
+  url: https://home.paynearme.com/data-security/
+- type: Conformance
+  url: conformance/paynearme-conformance.yml
+- type: Webhooks
+  url: asyncapi/paynearme-callbacks-webhooks.yml
+- type: DomainSecurity
+  url: security/paynearme-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

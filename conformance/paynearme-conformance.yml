@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://home.paynearme.com/data-security/
+summary: >-
+  PayNearMe publishes its security and compliance posture on its Data Security
+  page, stating it conducts SOC 1, SOC 2, NACHA, and PCI DSS audits annually with
+  reports available upon request. As a money services business it also holds
+  state money transmitter licenses.
+standards:
+  - id: pci-dss
+    conforms: true
+    version: 4.0.1
+    level: Service Provider Level 1
+    evidence: 'Data Security page: "PCI DSS v4.0.1 certified at Service Provider Level 1 with annual QSA assessments"'
+  - id: soc1
+    conforms: true
+    evidence: 'Data Security page: annual SOC 1 audit, report available on request'
+  - id: soc2
+    conforms: true
+    evidence: 'Data Security page: annual SOC 2 audit verifying security, availability, and confidentiality'
+  - id: nacha
+    conforms: true
+    evidence: 'Data Security page: NACHA accreditation for ACH payment processing, audited annually'
+  - id: money-transmitter-licenses
+    conforms: true
+    evidence: 'State money transmitter licenses published at https://home.paynearme.com/mt-licenses/'
